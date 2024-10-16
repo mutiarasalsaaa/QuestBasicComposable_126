@@ -47,6 +47,12 @@ fun BasicLayout(modifier: Modifier = Modifier) {
         Text(
             text = "Login",
             style = TextStyle(fontSize = 50.sp, fontWeight = FontWeight.Bold)
+                    Text(text = "Ini adalah halaman login")
+                    Image(
+                    painter = painterResource(id = R.drawable.logoku), // Pastikan ini adalah gambar yang benar
+            contentDescription = null,
+            modifier = modifier.padding(top = 20.dp).size(200.dp)
+        )
 
 
 
