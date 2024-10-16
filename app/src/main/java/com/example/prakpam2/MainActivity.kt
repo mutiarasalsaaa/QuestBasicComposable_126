@@ -53,6 +53,13 @@ fun BasicLayout(modifier: Modifier = Modifier) {
             contentDescription = null,
             modifier = modifier.padding(top = 20.dp).size(200.dp)
         )
+        Text(text = "nama", modifier = Modifier.padding(top = 20.dp))
+        Text(
+            text = "Mutiara Aulia Salsabila",
+            color = Color.Magenta,
+            style = TextStyle(fontSize = 20.sp, fontWeight = FontWeight.Bold)
+        )
+
 
 
 
