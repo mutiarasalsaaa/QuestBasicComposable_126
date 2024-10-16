@@ -75,7 +75,9 @@ fun BasicLayout(modifier: Modifier = Modifier) {
 @Composable
 fun GreetingPreview() {
     PrakPAM2Theme {
-
+        BasicLayout()
+    }
+}
 
 
 
