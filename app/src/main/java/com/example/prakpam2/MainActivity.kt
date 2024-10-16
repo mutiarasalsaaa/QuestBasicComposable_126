@@ -27,16 +27,17 @@ import com.example.prakpam2.ui.theme.PrakPAM2Theme
 class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        enableEdgeToEdge()
+        enableEdgeToEdge() // Mengaktifkan tampilan edge-to-edge
         setContent {
             PrakPAM2Theme {
-    Scaffold(modifier = Modifier.fillMaxSize()) { innerPadding ->
-        BasicLayout(modifier = Modifier.padding(innerPadding))
+                Scaffold(modifier = Modifier.fillMaxSize()) { innerPadding ->
+                    BasicLayout(modifier = Modifier.padding(innerPadding))
+                }
+            }
+        }
     }
-   }
-  }
- }
 }
+
 @Composable
 fun BasicLayout(modifier: Modifier = Modifier) {
     Column(
@@ -47,9 +48,10 @@ fun BasicLayout(modifier: Modifier = Modifier) {
         Text(
             text = "Login",
             style = TextStyle(fontSize = 50.sp, fontWeight = FontWeight.Bold)
-                    Text(text = "Ini adalah halaman login")
-                    Image(
-                    painter = painterResource(id = R.drawable.logoku), // Pastikan ini adalah gambar yang benar
+        )
+        Text(text = "Ini adalah halaman login")
+        Image(
+            painter = painterResource(id = R.drawable.logoku), // Pastikan ini adalah gambar yang benar
             contentDescription = null,
             modifier = modifier.padding(top = 20.dp).size(200.dp)
         )
@@ -65,12 +67,13 @@ fun BasicLayout(modifier: Modifier = Modifier) {
             modifier = Modifier.padding(top = 20.dp)
         )
         Image(
-            painter = painterResource(id = R.drawable.muti),
+            painter = painterResource(id = R.drawable.muti), // Pastikan ini adalah gambar yang benar
             contentDescription = null,
             modifier = Modifier.padding(top = 40.dp).size(300.dp)
         )
     }
 }
+
 @Preview(showBackground = true)
 @Composable
 fun GreetingPreview() {
@@ -78,17 +81,3 @@ fun GreetingPreview() {
         BasicLayout()
     }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
